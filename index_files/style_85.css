@@ -1,0 +1,216 @@
+
+
+/* Partie manuelle */
+
+
+/* Partie manuelle */
+
+/* ---------------------------------------------------- */
+/* ---------------------------------------------------- */
+/* GLOBAL */
+/* ---------------------------------------------------- */
+/* ---------------------------------------------------- */
+* {
+    font-family: 'Open Sans', sans-serif;
+    color: #444444;
+}
+
+/* ---------------------------------------------------- */
+/* ---------------------------------------------------- */
+/* SUPPRESSION D'ELEMENTS */
+/* ---------------------------------------------------- */
+/* ---------------------------------------------------- */
+/* Icone du blog */
+#blog_icon {
+    display: none;
+}
+
+/* Description du blog */
+#head p {
+    display: none;
+}
+
+/* Tête des boîtes dans les colonnes */
+.column .box .head {
+    background: none;
+}
+
+/* Pied des boîtes dans les colonnes */
+.column .box .foot {
+    background: none;
+}
+
+/* Smiley de l'article */
+.post .smiley {
+    display: none;
+}
+
+/* Boîte dans la colonne contenant la fonte */
+#box_3054 {
+    display: none;
+}
+
+/* ---------------------------------------------------- */
+/* ---------------------------------------------------- */
+/* MODIFICATION D'ELEMENTS */
+/* ---------------------------------------------------- */
+/* ---------------------------------------------------- */
+/* Fond du blog */
+body {
+    background: none;
+    background-image: url(http://img15.hostingpics.net/pics/551829blog.png);
+}
+
+/* Pour faire apparaître la seconde colonne */
+#column2 {
+    display: block;
+}
+
+/* Pour faire apparaître la seconde colonne */
+.postContent {
+    margin-right: 190px;
+}
+
+/* Largeur du blog */
+#page_shadow, #page {
+    width: 900px;
+}
+
+/* Liens, Titres des articles */
+a, .post h2 a, .column .box a {
+    text-decoration: none;
+    transition: all 0.2s ease-in-out 0s;
+    color: #444444
+}
+
+/* Liens, Titres des articles */
+a:hover, .post h2 a:hover, .column .box a:hover {
+    color: #12A3CC;
+    background: none;
+    text-decoration : underline;
+}
+
+/* Titres des articles */
+.post h2 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    padding-top: 12px;
+    border-bottom: 1px solid #999;
+    border-top: none;
+    background-color: #E7E7E7;
+}
+
+/* Contenu des articles */
+#content .post {
+    background-color: #E7E7E7;
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+/* Titre du blog */
+#head, #head h1 a {
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* Boîtes dans les colonnes */
+.column .box {
+    opacity: 1;
+    background-color: #E7E7E7;
+}
+
+/* Entête des boîtes dans les colonnes */
+.column .box h3 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    background-color: #E7E7E7;
+}
+
+/* Contenu des boîtes dans les colonnes */
+.column .box .body {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    background-color: #E7E7E7;
+    border-top: none;
+}
+
+/* Boîte de gestion du blog, gestion du compte */
+#box_2354, #box_2355 {
+    text-transform: uppercase;
+}
+
+/* Commentaires */
+.postComment, .postAuthorComment, .postMyComment {
+    border: none;
+    padding: 18px;
+}
+
+/* Commentaires de l'auteur du blog */
+.postAuthorComment {
+    background-color: #B5C7D1;
+}
+
+/* Commentaires du lecteur du blog */
+.postMyComment {
+    background-color: #C5D9E5;
+}
+
+/* Commentaires des autres utilisateur */
+.postComment {
+    background-color: #e7e7e7;
+}
+
+/* Avatars dans les commentaires (boîte déformée) */
+#postComments div.avatar {
+    border: none;
+}
+
+/* Avatars dans les commentaires (image) */
+.avatar img {
+    box-shadow: 1px 1px 2px #666666;
+}
+
+/* Smileys dans les commentaires */
+#postComments div.smiley {
+    margin-left: 18px;
+}
+
+/* Pied de commentaire */
+#postComments div.signature {
+    margin-top: 18px;
+}
+
+/* ---------------------------------------------------- */
+/* ---------------------------------------------------- */
+/* NOUVEAUX ELEMENTS */
+/* ---------------------------------------------------- */
+/* ---------------------------------------------------- */
+/* Colonne Notes */
+#box_3056 .box {
+    font-size: 12px;
+}
+
+/* Colonne Notes */
+#box_3056 nav {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+/* Sections de titre (mois) dans la colonne Notes */
+#box_3056 .section-titre-sommaire {
+    text-transform: uppercase;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Liens vers les articles dans la colonne Notes */
+#box_3056 .box a {
+    padding-left: 18px;
+}

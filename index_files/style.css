@@ -1,0 +1,304 @@
+body {
+	margin:0;
+	padding:0;
+	background: #FFF url(http://www.karmaos.com/skin/layout/stripes_white/background.png) repeat-x;
+	font-family: Tahoma, Arial, Helvetica, "Bitstream Vera Sans", sans-serif;
+	font-size:12px;
+	color: black;
+}
+#body_z2 {
+	position:fixed;
+	top:0;
+	width:100%;height:100%;
+	background: url(http://www.karmaos.com/skin/translucide/noir_50.png);
+	display:none;
+	z-index:100;
+}
+#page_z2 {
+	position:fixed;
+	width:760px;
+	margin-top: 120px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+
+/* mise en page generale */
+#page_shadow {
+	margin-left:auto;
+	margin-right:auto;
+	width:780px;
+}
+#page {
+	width:760px;
+	margin-top: 0px;
+	margin-left:auto;
+	margin-right:auto;
+	position:relative;
+}
+#head {
+	height:70px;
+	padding:5px;
+	position:relative;
+}
+#content,#content_z2 {
+	margin:5px 190px;
+	min-height:400px;
+}
+.column {width:180px;margin:5px;}
+#column {float:left;}
+#column2 {float:right;}
+
+/* si on a qu'une seule colonne : */
+#content,#content_z2 { margin-right:5px; }
+#column2 {display:none;}
+
+
+/* decoration generale */
+#page_shadow {
+	background: url(http://www.karmaos.com/skin/shadows/shadow_780.png) repeat-y;
+}
+#page {
+	background:white;
+}
+
+
+/* redifinition des tags html */
+/* gros titre */
+h1 {
+	margin:0;
+	padding: 3px 10px;
+	background: #ddd;
+	border-top: 1px solid #aaa;
+	border-bottom: 1px solid #aaa;
+	font-size:12px;
+}
+
+/* les images qui sont des liens n'ont pas de bord*/
+a img {border:0;}
+
+/* espacement a gouche pour les images ferees a droite (et lycée de Versailles) */
+img {border:0;}
+img[align='left'] {margin-right:4px;}
+img[align='right'] {margin-left:4px;}
+img[style*='float:left'] {margin-right:4px;}
+img[style*='float:right'] {margin-left:4px;}
+
+/* styles divers */
+td { font-size:11px; }
+th { border: 1px solid #999; padding:1px 3px; text-align:center;}
+dt { font-weight:bold;}
+dd { margin-bottom:15px }
+del { background: #f99; text-decoration:none;}
+ins { background: #9f9; text-decoration:none;}
+form {margin:0;}
+input,textarea {
+	border: 1px solid #ddd;
+	background: #F6F6F6;
+	font-family: arial,helvetica,sans-serif;
+	font-size:12px;
+}
+pre {
+	border: 1px dashed #999;
+	padding: 5px;
+	background: #ddd;
+	overflow-x: auto;
+	overflow-y: auto;
+}
+/* espaceur */
+.spacer { clear: both; }
+
+
+/* en-tête */
+#head h1 {
+	margin:0;
+	padding:0;
+	background: none;
+	border:0;
+	font-size:12px;
+}
+#head p {
+	margin-top:0;
+}
+#blog_icon {float:left;margin-right:4px;width:60px;height:60px;}
+
+/* contenu */
+#content,#content_z2 {text-align:justify;}
+#content_z2 a {color:white;}
+#content .box { margin-top:10px; margin-bottom:20px; }
+
+/* articles */
+.post {	margin-top:10px; margin-bottom:20px; }
+.post .smiley {float:right;}
+.post h2, #content .box h2 { margin:0; padding:2px 4px; background:#ddd; border-bottom:1px solid #aaa; border-top:1px solid #aaa;	font-size:12px; }
+.post h2 a {color:black;text-decoration:none;}
+.postContent { padding:4px; }
+.postTags { padding-left:4px; }
+.postSign { height:20px; font-weight:normal; color:#999; padding:6px 4px 2px 4px; }
+.post .buzz { height:22px; }
+.post .buzz a { display:block;width:22px;height:22px;float:left;margin-right:2px;background:url(/img/sprite_buzz.png); }
+
+/* commentaires */
+#postComment {margin:20px 0;}
+#postComment textarea {width:98%;height:60px;border:1px solid #aaa;padding:3px;}
+.postComment, .postAuthorComment, .postMyComment {margin:10px 0; border: 1px solid #CCC; background:#F6F6F6; padding: 4px;}
+.postComment .signature, .postAuthorComment .signature, .postMyComment .signature {color:#999;}
+.postAuthorComment {border: 1px solid #999; background:#ddd;}
+.postMyComment {border: 1px solid #fcc; background:#FFF6F6;color:#330000;}
+#postComments div.avatar {float:left;border:1px solid black;}
+#postComments div.smiley {float:right;margin-left:2px;}
+#postComments div.comment {margin-left:80px;min-height:46px;}
+#postComments div.signature {margin-left:80px;}
+
+
+/* colonne */
+.column {margin-top:5px;}
+.column ul, .column ul li {list-style:none;margin:0;padding:0;}
+
+/* style general des widgets */
+.column .box {
+	font-family: 'Lucida Grande',Geneva,Arial,Verdana,sans-serif;
+	font-size:11px;
+	border: 0;
+	padding-bottom:5px;
+	margin-top:0;
+	opacity:.8;
+}
+.column .box .body {background:black; color:white;margin-top:0;padding-top:0;border-top:1px solid black;}
+.column .box input {background:#333; color:white; border:1px solid white; margin:1px;}
+.column .box h3 {padding: 0 0 3px 0; text-align:center; margin-top:0;border-bottom:1px solid #999;}
+.column .box a {color:white; text-decoration: none; display: block; padding: 2px 0 2px 8px; opacity: 2;}
+.column .box a:hover {color:white; background:#333;}
+.column .box td a {text-decoration: none; display: inline; padding:0; opacity: 2;}
+.column .box .foot {
+	height:6px;
+	background: url(/img/design/blackbox_bottom.png);
+}
+.column .box .head {
+	margin:5px 0 0 0;
+	height:4px;
+	background: url(/img/design/blackbox_top.png) top left;
+}
+.column .box .small_padding { padding-left:4px;padding-right:4px;}
+
+.column h2 {margin:0px 0 4px 0;font-size:12px;}
+.column h3 {margin-bottom:2px;font-size:11px;}
+
+
+/* boutons d'administration des widgets */
+.column div.box_admin {
+	display:none;
+	float:right;
+	margin-right:4px;
+	padding:1px 1px;
+	text-decoration:none;
+}
+.column div.box_admin a {
+	display:inline;
+	margin:0;padding:0 2px;
+}
+.column a.box_closer {
+	display:none;
+	float:right;
+	margin-right:4px;
+	padding:2px;
+	text-decoration:none;
+}
+.column a.box_closer:hover {
+	background:white;
+	color:black;
+}
+
+
+/* info de debugage (que pour moi normalement) */
+#debug { color:#999;padding:2px;position:absolute;bottom:4px;left:4px;}
+
+
+
+
+/* style des widgets :
+	la mon met le code CSS specifique aux widgets
+*/
+
+/* widget TAGS */
+.column .tag_cloud_body { padding: 4px;}
+.column .tag_cloud_body a {
+	display:inline;
+	padding:2px;
+	font-weight:normal;
+}
+.column .tag_cloud_body a:hover {
+	background:none;
+	text-decoration:underline;
+}
+.column .tag_cloud_body a.s1 {font-size:9px;}
+.column .tag_cloud_body a.s2 {font-size:10px;}
+.column .tag_cloud_body a.s3 {font-size:11px;}
+.column .tag_cloud_body a.s4 {font-size:12px;}
+.column .tag_cloud_body a.s5 {font-size:13px;}
+.column .tag_cloud_body a.s6 {font-size:14px;}
+.column .tag_cloud_body a.s7 {font-size:15px;}
+.column .tag_cloud_body a.s8 {font-size:16px;}
+.column .tag_cloud_body a.s9 {font-size:17px;}
+.column .tag_cloud_body a.s10 {font-size:18px;}
+
+/* widget derniers commmentaires */
+.column .comment_last a {padding-bottom:6px;clear:left;}
+.column .comment_last .sign {font-size:smaller;display:none;}
+
+/* widget calendrier */
+.cal {margin-left:auto;margin-right:auto;}
+.cal td {text-align:right;}
+.cal td.empty {}
+.cal .day_names td {text-align:center;}
+.cal .months td {text-align:center;}
+.column .cal .months td a {background:none;color:inherit;padding:2px;}
+.cal .past {}
+.cal .today {background:#CCC;color:black;}
+.cal .futur {}
+.column .cal td a {display:block;padding:0;background:#999;color:black;}
+.column .cal td a:hover {background:white;color:black;}
+
+/* widget blog stats */
+.column .widget_blog_stats td a {text-decoration:underline;}
+.column .widget_blog_stats td a:hover {background:none;}
+
+/* widget derniers articles */
+.column .widget_post_last .sign {font-size:smaller;display:none;}
+
+/* widget wishlist */
+.column ul.widget_wishlist {margin:0;padding:2px;}
+.column ul.widget_wishlist li {margin:2px;padding:2px;list-style:none;font-size:8px;color:#ccc;}
+.column ul.widget_wishlist h4 {margin:0;padding:0;font-weight:normal;font-size:11px;color:white;}
+.column ul.widget_wishlist li a {display:inline;margin:0;padding:0;}
+.column ul.widget_wishlist li a:hover {background:none;}
+
+/* widget lastfm */
+.widget_lastfm li a {padding-left:6px;}
+.widget_lastfm li .date {float:right;margin-right:4px;font-size:smaller;opacity:.6;}
+.widget_lastfm li .artist {margin-left:8px;font-size:smaller;opacity:.6;}
+.widget_lastfm .cover {display:none;}
+
+/* widget twitter */
+.column .box .widget_twitter li {padding: 8px 4px;font-size:10px;text-align:left;}
+.column .box .widget_twitter li .date {opacity:.5;}
+.column .box .widget_twitter li a {display:inline;padding-left:0;text-decoration:underline;}
+
+
+.column .box .more {text-align:right;padding-right:4px;}
+
+/* popover */
+#popover {
+	position:fixed;
+	top:0;
+	left:0;
+	padding-left:50px;
+	padding-top:50px;
+	width:100%;
+	height:100%;
+	z-index:200;
+	background: url(http://www.karmaos.com/skin/translucide/noir_50.png);
+}
+#popover img {
+	border: 4px solid black;
+}

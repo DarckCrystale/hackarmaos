@@ -1,0 +1,42 @@
+#column .box h3 {cursor:move;}
+
+.admin_btn {text-align:right;}
+.admin_btn a {border:1px solid #999;background:#EEE;margin:4px;padding:2px;}
+
+
+/* z2 : les styles du gestionnaire de wigets */
+
+#z2_box {width:460px;height:400px;color:white;opacity:0;}
+#z2_box .body {padding:5px;background:black;}
+#z2_box .body img {margin:3px;}
+#z2_box .bottom {
+	width:460px;
+	height:6px;
+	background: url(/img/design/widget_list_bottom.png);
+}
+#z2_box .top {
+	margin:5px 0 0 0;
+	width:460px;
+	height:4px;
+	background: url(/img/design/widget_list_top.png) top left;
+}
+#z2_box a.box_closer {
+	display:none;
+	float:right;
+	margin-right:4px;
+	padding:2px;
+	text-decoration:none;
+}
+#z2_box a.box_closer {display:block;}
+#z2_box a.box_closer:hover {background:white;color:black;}
+
+#z2_content input,#z2_content textarea,#z2_content select {
+	background:#444;
+	border:1px solid white;
+	padding-left:2px;
+	color:white;
+	-moz-border-radius: 4px;
+}
+
+#z2_content .field_name {width:150px;float:left;}
+#z2_content .field_input {margin-left:155px;margin-bottom:15px;}
